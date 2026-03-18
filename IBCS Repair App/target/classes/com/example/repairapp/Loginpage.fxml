@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" snapToPixel="false" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.repairapp.LoginPageApplication">
+    <children>
+        <StackPane fx:id="centerBox" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Group fx:id="boardGroup">
+                    <children>
+                        <ImageView fitHeight="357.0" fitWidth="552.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@corkboard.jpg" />
+                            </image>
+                        </ImageView>
+                        <PasswordField id="passTextField" fx:id="passTextField" layoutX="41.0" layoutY="243.0" prefHeight="31.0" prefWidth="180.0" promptText="Enter password" />
+                        <TextField id="userTextField" fx:id="userTextField" layoutX="41.0" layoutY="198.0" prefHeight="31.0" prefWidth="180.0" promptText="Enter username" />
+                        <Button id="logIn" layoutX="63.0" layoutY="287.0" mnemonicParsing="false" onAction="#logIn" prefHeight="33.0" prefWidth="136.0" style="-fx-background-color: maroon; -fx-border-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" text="Login" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Verdana Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="82.0" layoutY="168.0" stroke="#0510b2" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.8" text="Log In">
+                            <font>
+                                <Font name="Verdana Bold" size="27.0" />
+                            </font>
+                        </Text>
+                        <Separator layoutX="27.0" layoutY="122.0" prefHeight="0.0" prefWidth="212.0" />
+                        <ImageView fitHeight="104.0" fitWidth="267.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@logo.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="203.0" layoutX="350.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@sticknote.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="264.0" fitWidth="267.0" layoutX="287.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@paper.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="440.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@thumbtack.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="96.0" fitWidth="56.0" layoutX="27.0" layoutY="124.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@thumbtack.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="79.0" fitWidth="185.0" layoutX="333.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@lndscpe.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="135.0" fitWidth="73.0" layoutX="295.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@senator.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Group>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>
