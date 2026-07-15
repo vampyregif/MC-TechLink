@@ -19,7 +19,13 @@ module com.example.repairapp {
     requires java.net.http;
     requires javafx.graphics;
 
-    opens com.example.repairapp to javafx.fxml, firebase.admin;
+    opens com.example.repairapp.controller to javafx.fxml;
+    opens com.example.repairapp.model to firebase.admin, javafx.fxml;
+
     exports com.example.repairapp;
+    exports com.example.repairapp.model;
+    exports com.example.repairapp.controller;
+    exports com.example.repairapp.database;
+    exports com.example.repairapp.utility;
 
 }
